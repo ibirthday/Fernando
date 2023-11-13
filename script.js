@@ -48,6 +48,6 @@ function updateCountdown() {
         } else{
             countdownElement.textContent = `${days} días, ${hours} horas, ${minutes} minutos, ${seconds} segundos`;
         }
+
     }
 }
-
