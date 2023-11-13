@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Sometype Mono', monospace;
+    color: white;
+    background-color: #8b0000;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#containerList{
+    z-index: 1;
+    display: inline;
+}
+
+
+#art{
+    display: none;
+}
+
+#particles-js{
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#reproducir{
+    background-color: darkred;
+    width: auto;
+    margin-top: 30px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+}
