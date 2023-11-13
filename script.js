@@ -45,6 +45,8 @@ function updateCountdown() {
             countdownElement.textContent = `${days} días, ${hours} hora, ${minutes} minutos, ${seconds} segundos`;
         } else if (days == 1) {
             countdownElement.textContent = `${days} día, ${hours} horas, ${minutes} minutos, ${seconds} segundos`;
+        } else{
+            countdownElement.textContent = `${days} días, ${hours} horas, ${minutes} minutos, ${seconds} segundos`;
         }
     }
 }
