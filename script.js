@@ -3,10 +3,15 @@ const countdownElement = document.getElementById('countdown');
 
 function updateCountdown() {
     const currentDate = new Date();
-    const selectedDate = new Date("2024-05-20.");
+    
+    const selected_date = new Date(`${current_date.getFullYear()}-05-20.'`)
+    
+    if (selected_date - current_date <= 0) {
+        selected_date.setFullYear(current_date.getFullYear() + 1)
+    }
     const timeDifference = selectedDate - currentDate;
 
-    if (timeDifference <= 0) {
+    if (`${current_date.getDay()}-${current_date.getMonth()}-${current_date.getFullYear()}` === `${selected_date.getDay()}-${selected_date.getMonth()}-${selected_date.getFullYear()}`) {
         clearInterval(countdownInterval);
         countdownElement.textContent = '¡Hora de hacer desmadre!';
     } else {
