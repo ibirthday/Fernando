@@ -3,7 +3,6 @@ const countdownElement = document.getElementById('countdown');
 
 function updateCountdown() {
     const currentDate = new Date();
-    
     const selected_date = new Date(`${current_date.getFullYear()}-05-20.'`)
     
     if (selected_date - current_date <= 0) {
